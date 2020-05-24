@@ -7,7 +7,6 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback
 import kotlinx.android.synthetic.main.activity_persistent.*
 import kotlinx.android.synthetic.main.bottom_sheet.*
-import kotlinx.android.synthetic.main.content_persistent.*
 
 class PersistentActivity : AppCompatActivity() {
     private lateinit var sheetBehavior: BottomSheetBehavior<*>
@@ -15,11 +14,6 @@ class PersistentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_persistent)
-
-        toolbar.title = "Persistent Bottom Sheet"
-        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbar.setNavigationOnClickListener { finish() }
 
         sheetBehavior = BottomSheetBehavior.from(bottom_sheet)
         btn_bottom_sheet.setOnClickListener(View.OnClickListener {
