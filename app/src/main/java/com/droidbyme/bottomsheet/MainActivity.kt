@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             R.id.btnModal -> {
-                val dialogView = layoutInflater.inflate(R.layout.bottom_sheet, null)
+                val dialogView = layoutInflater.inflate(R.layout.bottom_sheet_2, null)
                 val dialog = BottomSheetDialog(this)
                 dialog.setContentView(dialogView)
                 dialog.show()
