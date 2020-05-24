@@ -17,33 +17,32 @@ class PersistentActivity : AppCompatActivity() {
 
         sheetBehavior = BottomSheetBehavior.from(bottom_sheet)
         btn_bottom_sheet.setOnClickListener(View.OnClickListener {
-            if (sheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED) {
-                sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED)
-                btn_bottom_sheet.setText("Close sheet")
+            if (sheetBehavior.state != BottomSheetBehavior.STATE_EXPANDED) {
+                sheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
             } else {
-                sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED)
-                btn_bottom_sheet.setText("Expand sheet")
+                sheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
             }
         })
         sheetBehavior.addBottomSheetCallback(object : BottomSheetCallback() {
             override fun onStateChanged(view: View, newState: Int) {
                 when (newState) {
                     BottomSheetBehavior.STATE_HIDDEN -> {
+                        btn_bottom_sheet.text = "STATE_HIDDEN"
                     }
                     BottomSheetBehavior.STATE_EXPANDED -> {
-                        btn_bottom_sheet.setText("Close Sheet")
+                        btn_bottom_sheet.text = "STATE_EXPANDED"
                     }
                     BottomSheetBehavior.STATE_COLLAPSED -> {
-                        btn_bottom_sheet.setText("Expand Sheet")
+                        btn_bottom_sheet.text = "STATE_COLLAPSED"
                     }
                     BottomSheetBehavior.STATE_DRAGGING -> {
-
+                        btn_bottom_sheet.text = "STATE_DRAGGING"
                     }
                     BottomSheetBehavior.STATE_SETTLING -> {
-
+                        btn_bottom_sheet.text = "STATE_SETTLING"
                     }
                     BottomSheetBehavior.STATE_HALF_EXPANDED -> {
-
+                        btn_bottom_sheet.text = "STATE_HALF_EXPANDED"
                     }
                 }
             }
