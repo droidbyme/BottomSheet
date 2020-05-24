@@ -20,7 +20,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <include layout="@layout/content_persistent" />
 
     <!-- Adding bottom sheet after main content -->
     <include layout="@layout/bottom_sheet" />

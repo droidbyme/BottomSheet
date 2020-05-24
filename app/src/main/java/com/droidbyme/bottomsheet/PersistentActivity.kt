@@ -2,22 +2,19 @@ package com.droidbyme.bottomsheet
 
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_persistent.*
 import kotlinx.android.synthetic.main.bottom_sheet.*
-import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_persistent.*
 
 class PersistentActivity : AppCompatActivity() {
     private lateinit var sheetBehavior: BottomSheetBehavior<*>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_persistent)
 
         toolbar.title = "Persistent Bottom Sheet"
         setSupportActionBar(toolbar)
