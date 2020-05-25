@@ -24,6 +24,7 @@ The following xml layout is used with BottomSheetDialog and BottomSheetFragment 
         android:orientation="horizontal">
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="84dp"
             android:layout_height="match_parent"
             android:padding="8dp"
