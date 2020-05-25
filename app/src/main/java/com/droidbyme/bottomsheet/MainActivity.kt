@@ -12,10 +12,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        init()
-    }
-
-    private fun init() {
         setContentView(R.layout.activity_main)
 
         btnPersistent.setOnClickListener(this)
