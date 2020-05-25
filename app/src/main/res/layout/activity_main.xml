@@ -17,7 +17,7 @@
         android:background="@color/colorPrimary"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Persistent Bottom Sheet"
+        android:text="Persistent Bottom Sheet - BottomSheetBehaviour"
         android:textAllCaps="false"
         android:textColor="@color/white" />
 
@@ -30,7 +30,7 @@
         android:background="@color/colorPrimary"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Modal Bottom Sheet (BottomSheetDialog)"
+        android:text="Modal Bottom Sheet - BottomSheetDialog"
         android:textAllCaps="false"
         android:textColor="@color/white" />
 
@@ -43,7 +43,7 @@
         android:background="@color/colorPrimary"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="Modal Bottom Sheet (BottomSheetDialogFragment)"
+        android:text="Modal Bottom Sheet - BottomSheetDialogFragment"
         android:textAllCaps="false"
         android:textColor="@color/white" />
 
